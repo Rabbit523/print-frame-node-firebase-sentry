@@ -1,0 +1,74 @@
+enum discountType {
+  fix
+  percent
+}
+enum discountStatus {
+  expired
+  active
+  disabled
+}
+input NewDiscountCode {
+  code: String!
+  expirationDate: String
+  startDate: String
+  value: Float!
+  type: discountType!
+  limit: Int
+  timesUsed: Int
+  status: discountStatus
+}
+input UpdateDiscountCode {
+  id: ID!
+  code: String
+  expirationDate: String
+  startDate: String
+  value: Float
+  type: discountType
+  limit: Int
+  timesUsed: Int
+  status: discountStatus
+}
+input DeleteDiscountCode {
+  id: ID!
+}
+input DiscountCodeFilter {
+  limit: Int!
+  offset: Int!
+}
+input DiscountCodeInput {
+  id: ID!
+}
+input DiscountCodeExist {
+  code: String!
+}
+type DiscountCode {
+  id: ID!
+  code: String!
+  expirationDate: String
+  startDate: String
+  value: Float!
+  type: discountType!
+  limit: Int
+  timesUsed: Int
+  createdAt: String
+  status: discountStatus
+}
+
+type DiscountCodeQueryInfo {
+  total: Int!
+  discountCodes: [DiscountCode!]
+}
+type DiscountCheck {
+  value: Float!
+  type: String!
+}
+extend type Query {
+  getAllDiscountCodes(input: DiscountCodeFilter!): DiscountCodeQueryInfo!
+  getOneDiscountCode(input: DiscountCodeInput!): DiscountCode!
+}
+extend type Mutation {
+  isValidDiscountCode(input: DiscountCodeExist!): DiscountCheck!
+  createDiscountCode(input: NewDiscountCode!): DiscountCode!
+  updateDiscountCode(input: UpdateDiscountCode!): DiscountCode!
+  deleteDiscountCode(input: DeleteDiscountCode!): Boolean!
+}

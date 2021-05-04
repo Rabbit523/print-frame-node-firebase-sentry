@@ -1,0 +1,74 @@
+type User {
+  id: ID!
+  salutation: String!
+  userRole: Int!
+  shippingAddress: IAddress
+  billingAddress: IAddress
+  email: String!
+}
+type UserList {
+  uid: String
+  email: String
+  displayName: String
+  customClaims: Int
+}
+type UserQueryInfo {
+  users: [User!]
+  total: Int!
+}
+input UpdateUser {
+  id: ID!
+  userEmail: String
+  password: String
+}
+#zip is the correct input, do not change to zipCode
+input IAddressInput {
+  name: String!
+  street1: String!
+  street2: String
+  city: String
+  state: String!
+  country: String
+  zipCode: Int!
+}
+input NewUser {
+  salutation: String
+  userRole: Int
+  shippingAddress: IAddressInput
+  billingAddress: IAddressInput
+}
+
+input DeleteUser {
+  id: ID!
+}
+input UserIdInput {
+  id: ID!
+}
+input UserFilter {
+  limit: Int!
+  offset: Int!
+}
+type UserData {
+  users: [UserList!]
+  total: Int!
+}
+type Query {
+  #Gets the user with specific ID,Auth 4
+  getUser(input: UserIdInput!): User!
+  #Gets all the users , Auth 4
+  getAllUsers(input: UserFilter!): UserQueryInfo!
+  #Get all users from firebase
+  getAllFirebaseUsers(input: Int): UserData!
+  getMyInfo: User!
+}
+
+type Mutation {
+  # It creates a user and integrates it with passport local strategy
+  createUser(input: NewUser!): User!
+  # It updates specific user, Auth 4
+  updateUser(input: UpdateUser!): User!
+  # It deletes specific user, Auth 4
+  deleteUser(input: DeleteUser!): Boolean!
+  createMe(input: NewUser): Boolean!
+  updateMe(input: NewUser!): Boolean!
+}

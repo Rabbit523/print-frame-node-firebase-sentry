@@ -1,0 +1,47 @@
+type Option {
+  id: ID!
+  optionKey: String!
+  optionValue: String
+}
+type OptionQueryInfo {
+  options: [Option!]
+  total: Int!
+}
+
+input CreateOption {
+  optionKey: String!
+  optionValue: String
+}
+
+input OptionIdInput {
+  key: String!
+}
+
+input UpdateOption {
+  id: ID!
+  optionKey: String!
+  optionValue: String
+}
+input OptionFilter {
+  limit: Int!
+  offset: Int!
+}
+input DeleteOption {
+  id: ID!
+}
+extend type Query {
+  # It gets specific option , Auth 5
+  getOption(input: OptionIdInput!): Option
+  # It gets all options, Auth 5
+  getAllOptions(input: OptionFilter!): OptionQueryInfo!
+}
+
+extend type Mutation {
+  # It creates one option, Auth 5
+  createOption(input: CreateOption!): Option
+  createOptions(input: [CreateOption!]): [Option]
+  # It updates one option, Auth 5
+  updateOption(input: UpdateOption!): Option
+  # It deletes one option ,Auth 5
+  deleteOption(input: DeleteOption!): Boolean!
+}

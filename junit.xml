@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<testsuites name="jest tests" tests="45" failures="1" time="11.853">
+  <testsuite name="User" errors="0" failures="0" skipped="9" timestamp="2020-02-15T05:17:04" time="5.922" tests="9">
+    <testcase classname="User should get all" name="User should get all" time="0.001">
+      <skipped/>
+=======
+<testsuites name="jest tests" tests="49" failures="1" time="7.018">
+  <testsuite name="DiscountCode" errors="0" failures="0" skipped="0" timestamp="2020-02-15T07:26:48" time="4.127" tests="13">
+    <testcase classname="DiscountCode should get all" name="DiscountCode should get all" time="0.036">
+>>>>>>> 545f0d2bdc8332288b33591e7ffe2d98d7690e77
+    </testcase>
+    <testcase classname="DiscountCode should get one DiscountCode" name="DiscountCode should get one DiscountCode" time="0.009">
+    </testcase>
+    <testcase classname="DiscountCode should check one existing DiscountCode" name="DiscountCode should check one existing DiscountCode" time="0.007">
+    </testcase>
+    <testcase classname="DiscountCode should check one existing DiscountCode with over the limit" name="DiscountCode should check one existing DiscountCode with over the limit" time="0.008">
+    </testcase>
+    <testcase classname="DiscountCode should check one existing DiscountCode with expired date" name="DiscountCode should check one existing DiscountCode with expired date" time="1.015">
+    </testcase>
+    <testcase classname="DiscountCode should create one DiscountCode" name="DiscountCode should create one DiscountCode" time="0.006">
+    </testcase>
+    <testcase classname="DiscountCode should fail to create duplicate code for DiscountCode" name="DiscountCode should fail to create duplicate code for DiscountCode" time="0.007">
+    </testcase>
+    <testcase classname="DiscountCode should fail to create one DiscountCode above %100" name="DiscountCode should fail to create one DiscountCode above %100" time="0.005">
+    </testcase>
+    <testcase classname="DiscountCode should fail to create one DiscountCode with past exp date" name="DiscountCode should fail to create one DiscountCode with past exp date" time="0.003">
+    </testcase>
+    <testcase classname="DiscountCode should update one DiscountCode" name="DiscountCode should update one DiscountCode" time="0.012">
+    </testcase>
+    <testcase classname="DiscountCode should fail to update one fake DiscountCode" name="DiscountCode should fail to update one fake DiscountCode" time="0.005">
+    </testcase>
+    <testcase classname="DiscountCode should delete one DiscountCode" name="DiscountCode should delete one DiscountCode" time="0.006">
+    </testcase>
+    <testcase classname="DiscountCode should fail to delete fictional DiscountCode" name="DiscountCode should fail to delete fictional DiscountCode" time="0.005">
+    </testcase>
+  </testsuite>
+<<<<<<< HEAD
+  <testsuite name="Product" errors="0" failures="1" skipped="0" timestamp="2020-02-15T05:17:10" time="0.925" tests="7">
+    <testcase classname="Product should get all" name="Product should get all" time="0.081">
+=======
+  <testsuite name="Product" errors="0" failures="1" skipped="1" timestamp="2020-02-15T07:26:52" time="0.697" tests="11">
+    <testcase classname="Product should get all" name="Product should get all" time="0.054">
+>>>>>>> 545f0d2bdc8332288b33591e7ffe2d98d7690e77
+      <failure>MongoError: E11000 duplicate key error collection: printAndFrameItTEST.products index: sizes.width_1_sizes.height_1 dup key: { sizes.width: 8, sizes.height: 10 }
+    at Function.create (/home/hamid/printAndFrameIt/server/node_modules/mongodb/lib/core/error.js:43:12)
+    at toError (/home/hamid/printAndFrameIt/server/node_modules/mongodb/lib/utils.js:149:22)
+    at /home/hamid/printAndFrameIt/server/node_modules/mongodb/lib/operations/common_functions.js:265:39
+    at handler (/home/hamid/printAndFrameIt/server/node_modules/mongodb/lib/core/sdam/topology.js:908:24)
+    at /home/hamid/printAndFrameIt/server/node_modules/mongodb/lib/cmap/connection_pool.js:352:13
+    at handleOperationResult (/home/hamid/printAndFrameIt/server/node_modules/mongodb/lib/core/sdam/server.js:487:5)
+    at MessageStream.messageHandler (/home/hamid/printAndFrameIt/server/node_modules/mongodb/lib/cmap/connection.js:270:5)
+    at MessageStream.emit (events.js:210:5)
+    at processIncomingData (/home/hamid/printAndFrameIt/server/node_modules/mongodb/lib/cmap/message_stream.js:144:12)
+    at MessageStream._write (/home/hamid/printAndFrameIt/server/node_modules/mongodb/lib/cmap/message_stream.js:42:5)
+    at doWrite (_stream_writable.js:431:12)
+    at writeOrBuffer (_stream_writable.js:415:5)
+    at MessageStream.Writable.write (_stream_writable.js:305:11)
+    at Socket.ondata (_stream_readable.js:727:22)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)</failure>
+    </testcase>
+<<<<<<< HEAD
+    <testcase classname="Product should create one product" name="Product should create one product" time="0.046">
+    </testcase>
+    <testcase classname="Product should get one" name="Product should get one" time="0.026">
+    </testcase>
+    <testcase classname="Product should update one product" name="Product should update one product" time="0.027">
+    </testcase>
+    <testcase classname="Product should fail to  update one product" name="Product should fail to  update one product" time="0.018">
+    </testcase>
+    <testcase classname="Product should delete one product" name="Product should delete one product" time="0.016">
+    </testcase>
+    <testcase classname="Product should fail to delete one product" name="Product should fail to delete one product" time="0.012">
+    </testcase>
+  </testsuite>
+  <testsuite name="DiscountCode" errors="0" failures="0" skipped="0" timestamp="2020-02-15T05:17:11" time="2.424" tests="13">
+    <testcase classname="DiscountCode should get all" name="DiscountCode should get all" time="0.061">
+    </testcase>
+    <testcase classname="DiscountCode should get one DiscountCode" name="DiscountCode should get one DiscountCode" time="0.018">
+    </testcase>
+    <testcase classname="DiscountCode should check one existing DiscountCode" name="DiscountCode should check one existing DiscountCode" time="0.011">
+    </testcase>
+    <testcase classname="DiscountCode should check one existing DiscountCode with over the limit" name="DiscountCode should check one existing DiscountCode with over the limit" time="0.016">
+    </testcase>
+    <testcase classname="DiscountCode should check one existing DiscountCode with expired date" name="DiscountCode should check one existing DiscountCode with expired date" time="1.012">
+=======
+    <testcase classname="Product should create one product" name="Product should create one product" time="0.019">
+    </testcase>
+    <testcase classname="Product should get one" name="Product should get one" time="0.018">
+    </testcase>
+    <testcase classname="Product should update one product" name="Product should update one product" time="0.017">
+    </testcase>
+    <testcase classname="Product should fail to  update one product" name="Product should fail to  update one product" time="0.011">
+    </testcase>
+    <testcase classname="Product should delete one product" name="Product should delete one product" time="0.011">
+    </testcase>
+    <testcase classname="Product should fail to delete one product" name="Product should fail to delete one product" time="0.01">
+    </testcase>
+    <testcase classname="Product should fail to create product with duplicate size" name="Product should fail to create product with duplicate size" time="0.009">
+    </testcase>
+    <testcase classname="Product should fail to delete one product" name="Product should fail to delete one product" time="0.016">
+    </testcase>
+    <testcase classname="Product should fail to create one product with duplicate sizes" name="Product should fail to create one product with duplicate sizes" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Product should add one size to product" name="Product should add one size to product" time="0.01">
+>>>>>>> 545f0d2bdc8332288b33591e7ffe2d98d7690e77
+    </testcase>
+  </testsuite>
+  <testsuite name="User" errors="0" failures="0" skipped="9" timestamp="2020-02-15T07:26:53" time="0.484" tests="9">
+    <testcase classname="User should get all" name="User should get all" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="User should get one user" name="User should get one user" time="0">
+      <skipped/>
+    </testcase>
+<<<<<<< HEAD
+    <testcase classname="DiscountCode should fail to create one DiscountCode above %100" name="DiscountCode should fail to create one DiscountCode above %100" time="0.006">
+    </testcase>
+    <testcase classname="DiscountCode should fail to create one DiscountCode with past exp date" name="DiscountCode should fail to create one DiscountCode with past exp date" time="0.005">
+    </testcase>
+    <testcase classname="DiscountCode should update one DiscountCode" name="DiscountCode should update one DiscountCode" time="0.017">
+=======
+    <testcase classname="User should create one user" name="User should create one user" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="User should check existing username" name="User should check existing username" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="User should check non existing username" name="User should check non existing username" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="User should update one user" name="User should update one user" time="0">
+      <skipped/>
+>>>>>>> 545f0d2bdc8332288b33591e7ffe2d98d7690e77
+    </testcase>
+    <testcase classname="User should fail to update one fake user" name="User should fail to update one fake user" time="0">
+      <skipped/>
+    </testcase>
+<<<<<<< HEAD
+    <testcase classname="DiscountCode should delete one DiscountCode" name="DiscountCode should delete one DiscountCode" time="0.009">
+    </testcase>
+    <testcase classname="DiscountCode should fail to delete fictional DiscountCode" name="DiscountCode should fail to delete fictional DiscountCode" time="0.007">
+    </testcase>
+  </testsuite>
+  <testsuite name="PrintSize" errors="0" failures="0" skipped="0" timestamp="2020-02-15T05:17:14" time="0.933" tests="7">
+    <testcase classname="PrintSize should get all" name="PrintSize should get all" time="0.056">
+    </testcase>
+    <testcase classname="PrintSize should get one printSize" name="PrintSize should get one printSize" time="0.014">
+    </testcase>
+    <testcase classname="PrintSize should create one printSize" name="PrintSize should create one printSize" time="0.012">
+    </testcase>
+    <testcase classname="PrintSize should update one printSize" name="PrintSize should update one printSize" time="0.017">
+    </testcase>
+    <testcase classname="PrintSize should fail to update one fake printSize" name="PrintSize should fail to update one fake printSize" time="0.011">
+    </testcase>
+    <testcase classname="PrintSize should delete one printSize" name="PrintSize should delete one printSize" time="0.011">
+=======
+    <testcase classname="User should delete one user" name="User should delete one user" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="User should fail to delete fictional user" name="User should fail to delete fictional user" time="0">
+      <skipped/>
+    </testcase>
+  </testsuite>
+  <testsuite name="PrintSize" errors="0" failures="0" skipped="0" timestamp="2020-02-15T07:26:53" time="0.605" tests="7">
+    <testcase classname="PrintSize should get all" name="PrintSize should get all" time="0.035">
+    </testcase>
+    <testcase classname="PrintSize should get one printSize" name="PrintSize should get one printSize" time="0.009">
+    </testcase>
+    <testcase classname="PrintSize should create one printSize" name="PrintSize should create one printSize" time="0.006">
+    </testcase>
+    <testcase classname="PrintSize should update one printSize" name="PrintSize should update one printSize" time="0.009">
+    </testcase>
+    <testcase classname="PrintSize should fail to update one fake printSize" name="PrintSize should fail to update one fake printSize" time="0.006">
+    </testcase>
+    <testcase classname="PrintSize should delete one printSize" name="PrintSize should delete one printSize" time="0.007">
+>>>>>>> 545f0d2bdc8332288b33591e7ffe2d98d7690e77
+    </testcase>
+    <testcase classname="PrintSize should fail to delete fictional printSize" name="PrintSize should fail to delete fictional printSize" time="0.004">
+    </testcase>
+  </testsuite>
+<<<<<<< HEAD
+  <testsuite name="Option" errors="0" failures="0" skipped="0" timestamp="2020-02-15T05:17:15" time="0.879" tests="8">
+    <testcase classname="Option should get all" name="Option should get all" time="0.047">
+    </testcase>
+    <testcase classname="Option should get one option" name="Option should get one option" time="0.012">
+    </testcase>
+    <testcase classname="Option should create one option" name="Option should create one option" time="0.008">
+    </testcase>
+    <testcase classname="Option should fail to get one fake option" name="Option should fail to get one fake option" time="0.008">
+    </testcase>
+    <testcase classname="Option should update one option" name="Option should update one option" time="0.015">
+    </testcase>
+    <testcase classname="Option should fail to update one fake option" name="Option should fail to update one fake option" time="0.012">
+    </testcase>
+    <testcase classname="Option should delete one option" name="Option should delete one option" time="0.01">
+    </testcase>
+    <testcase classname="Option should fail to delete one fake option" name="Option should fail to delete one fake option" time="0.027">
+    </testcase>
+  </testsuite>
+  <testsuite name="Misc" errors="0" failures="0" skipped="0" timestamp="2020-02-15T05:17:15" time="0.669" tests="1">
+    <testcase classname="Misc should send contact form" name="Misc should send contact form" time="0.016">
+=======
+  <testsuite name="Option" errors="0" failures="0" skipped="0" timestamp="2020-02-15T07:26:54" time="0.579" tests="8">
+    <testcase classname="Option should get all" name="Option should get all" time="0.034">
+    </testcase>
+    <testcase classname="Option should get one option" name="Option should get one option" time="0.008">
+    </testcase>
+    <testcase classname="Option should create one option" name="Option should create one option" time="0.005">
+    </testcase>
+    <testcase classname="Option should fail to get one fake option" name="Option should fail to get one fake option" time="0.005">
+    </testcase>
+    <testcase classname="Option should update one option" name="Option should update one option" time="0.007">
+    </testcase>
+    <testcase classname="Option should fail to update one fake option" name="Option should fail to update one fake option" time="0.006">
+    </testcase>
+    <testcase classname="Option should delete one option" name="Option should delete one option" time="0.006">
+    </testcase>
+    <testcase classname="Option should fail to delete one fake option" name="Option should fail to delete one fake option" time="0.014">
+    </testcase>
+  </testsuite>
+  <testsuite name="Misc" errors="0" failures="0" skipped="0" timestamp="2020-02-15T07:26:54" time="0.489" tests="1">
+    <testcase classname="Misc should send contact form" name="Misc should send contact form" time="0.01">
+>>>>>>> 545f0d2bdc8332288b33591e7ffe2d98d7690e77
+    </testcase>
+  </testsuite>
+=======
+<testsuites name="jest tests" tests="0" failures="0" time="2.276">
+>>>>>>> ImageHandling
+</testsuites>

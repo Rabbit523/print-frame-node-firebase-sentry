@@ -1,0 +1,8 @@
+input OrderUidInput {
+  currentUid: String!
+  newUid: String!
+}
+
+extend type Mutation {
+  changeOrderUid(input: OrderUidInput!): Boolean!
+}

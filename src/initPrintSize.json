@@ -1,0 +1,103 @@
+{
+  "sizeInput": [
+    {
+      "width": 20,
+      "height": 24,
+      "price": 40,
+      "hasFrame": true,
+      "shippingWidth": 30,
+      "shippingHeight": 24,
+      "shippingLength": 5,
+      "shippingWeight": 8,
+      "framePrice": 80
+    },
+    {
+      "width": 14,
+      "height": 24,
+      "price": 35,
+      "hasFrame": true,
+      "shippingWidth": 30,
+      "shippingHeight": 24,
+      "shippingLength": 5,
+      "shippingWeight": 8,
+      "framePrice": 75
+    },
+    {
+      "width": 12,
+      "height": 24,
+      "price": 35,
+      "hasFrame": true,
+      "shippingWidth": 30,
+      "shippingHeight": 24,
+      "shippingLength": 5,
+      "shippingWeight": 8,
+      "framePrice": 70
+    },
+    {
+      "width": 16,
+      "height": 20,
+      "price": 30,
+      "hasFrame": true,
+      "shippingWidth": 24,
+      "shippingHeight": 18,
+      "shippingLength": 5,
+      "shippingWeight": 8,
+      "framePrice": 65
+    },
+    {
+      "width": 14,
+      "height": 18,
+      "price": 30,
+      "hasFrame": true,
+      "shippingWidth": 24,
+      "shippingHeight": 18,
+      "shippingLength": 5,
+      "shippingWeight": 8,
+      "framePrice": 60
+    },
+    {
+      "width": 12,
+      "height": 16,
+      "price": 25,
+      "hasFrame": true,
+      "shippingWidth": 24,
+      "shippingHeight": 18,
+      "shippingLength": 5,
+      "shippingWeight": 8,
+      "framePrice": 55
+    },
+    {
+      "width": 14,
+      "height": 14,
+      "price": 20,
+      "hasFrame": true,
+      "shippingWidth": 24,
+      "shippingHeight": 18,
+      "shippingLength": 5,
+      "shippingWeight": 8,
+      "framePrice": 45
+    },
+    {
+      "width": 11,
+      "height": 14,
+      "price": 20,
+      "hasFrame": true,
+      "shippingWidth": 24,
+      "shippingHeight": 18,
+      "shippingLength": 5,
+      "shippingWeight": 8,
+      "framePrice": 35
+    },
+    {
+      "width": 8,
+      "height": 10,
+      "price": 10,
+      "hasFrame": true,
+      "shippingWidth": 24,
+      "shippingHeight": 18,
+      "shippingLength": 5,
+      "shippingWeight": 8,
+      "framePrice": 20
+    }
+  ]
+}

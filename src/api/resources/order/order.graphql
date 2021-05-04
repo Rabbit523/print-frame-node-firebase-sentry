@@ -1,0 +1,254 @@
+type Order {
+  id: ID!
+  orderId: String!
+  userId: String!
+  firstName: String
+  lastName: String
+  userEmail: String
+  phoneNumber: String
+  notes: String
+  salutation: String
+  paymentDate: String
+  shipmentDate: String
+  billingAddress: IAddress
+  shippingAddress: IAddress
+  orderTotal: Int
+  orderFee: Int
+  orderFolder: String
+  orderStatus: String
+  shippingLableUrl: String
+  shippingLableid: String
+  createdAt: String
+  images: [OrderImages!]
+  frames: [OrderFrames!]
+  framedImage: [OrderFramedImage!]
+}
+
+type IAddress {
+  name: String
+  street1: String
+  street2: String
+  city: String
+  state: String
+  country: String
+  zipCode: Int
+}
+
+type WallArts {
+  id: ID!
+  name: String!
+  price: Int!
+  quantity: Int!
+  images: [OrderImages!]
+}
+
+type OrderImages {
+  id: ID!
+  price: Int!
+  isBlackAndWhite: Boolean!
+  quantity: Int!
+  width: Int!
+  height: Int!
+  imageData: String!
+  name: String!
+  createdAt: String!
+  finalImageData: String
+  printWidth: Int
+  printHeight: Int
+  frameName: String!
+}
+
+type OrderFrames {
+  id: ID!
+  frameName: String!
+  frameId: String!
+  thumbnail: String!
+  width: String!
+  height: String!
+  shippingHeight: Int!
+  shippingWidth: Int!
+  shippingLength: Int!
+  shippingWeight: Int!
+  price: Float!
+  shippingLableUrl: String
+  shippingLableid: String
+  shippingPrice: String
+  quantity: Int
+}
+
+type OrderFramedImage {
+  name: String!
+  imageData: String!
+  isBlackAndWhite: String!
+  frameName: String!
+  width: String!
+  height: String!
+  shippingHeight: String!
+  shippingWidth: String!
+  shippingLength: String!
+  price: String!
+  shippingLableUrl: String!
+  shippingLableid: String!
+  shippingPrice: String!
+  quantity: String!
+}
+
+type myOrderItems {
+  images: [OrderImages!]
+  frames: [OrderFrames!]
+  wallArts: [WallArts!]
+  DiscountCode: String
+  DiscountValue: String
+  discountCodeType: String
+  total: Float
+  shippingAddress: IAddress
+  billingAddress: IAddress
+  email: String
+  shippingPrice: Float
+}
+
+type Address {
+  shippingAddress: IAddress
+  billingAddress: IAddress
+  userEmail: String!
+  phoneNumber: String!
+  firstName: String!
+  lastName: String!
+}
+
+input UpdateOrder {
+  id: ID!
+  orderId: String!
+  userId: String!
+  firstName: String
+  lastName: String
+  userEmail: String
+  phoneNumber: String
+  notes: String
+  salutation: String
+  paymentDate: String
+  shipmentDate: String
+  billingAddress: IAddressInput
+  shippingAddress: IAddressInput
+  orderTotal: Int
+  orderFee: Int
+  orderFolder: String
+  orderStatus: String
+  shippingLableUrl: String
+  shippingLableid: String
+  createdAt: String
+  images: [OrderImagesInput!]
+  frames: [OrderFramesInput!]
+  framedImage: [OrderFramedImageInput!]
+}
+
+input OrderImagesInput {
+  price: Int!
+  isBlackAndWhite: Boolean!
+  quantity: Int!
+  width: Int!
+  height: Int!
+  imageData: String!
+  name: String!
+  createdAt: String!
+}
+
+input OrderFramesInput {
+  frameName: String!
+  frameId: String!
+  width: String!
+  height: String!
+  shippingHeight: String!
+  shippingWidth: String!
+  shippingLength: String!
+  price: String!
+  shippingLableUrl: String!
+  shippingLableid: String!
+  shippingPrice: String!
+  quantity: String!
+}
+
+input OrderFramedImageInput {
+  name: String!
+  imageData: String!
+  isBlackAndWhite: String!
+  frameName: String!
+  width: String!
+  height: String!
+  shippingHeight: String!
+  shippingWidth: String!
+  shippingLength: String!
+  price: String!
+  shippingLableUrl: String!
+  shippingLableid: String!
+  shippingPrice: String!
+  quantity: String!
+}
+input AddFrameInput {
+  productId: ID!
+  sizeId: ID!
+}
+
+type OrderData {
+  orders: [Order!]
+  total: Int!
+}
+input updateMyOrderAddressInput {
+  firstName: String!
+  lastName: String!
+  shippingAddress: IAddressInput!
+  billingAddress: IAddressInput!
+  cellPhone: String
+  email: String!
+}
+input submitMyOrderInput {
+  authCode: String!
+}
+
+input ShippingScanner {
+  barcode: String!
+}
+input removeMyOrderItemInput {
+  id: ID!
+  type: String!
+}
+input updateMyWallArtQuantityInput {
+  wallArtId: ID!
+  quantity: Int!
+}
+input updateMyOrderItemQuantityInput {
+  imageId: ID!
+  type: String!
+  quantity: Int!
+}
+type AddWallArtResult {
+  id: ID!
+}
+input AddWallArt {
+  name: String!
+  price: Int!
+}
+input OrderFilter {
+  limit: Int!
+  offset: Int!
+}
+extend type Query {
+  getAllOrderData(input: OrderFilter!): OrderData!
+  getOrder(input: String!):Order!
+  getMyOrders: [Order!]
+  getMyOrderItems: myOrderItems!
+  getMyAddress: Address!
+}
+
+#TODO:Fix this code to the right value
+extend type Mutation {
+  updateOrder(input: UpdateOrder!): Boolean
+  addWallArt(input: AddWallArt): AddWallArtResult
+  addFrameToMyOrder(input: AddFrameInput!): Boolean
+  updateMyOrderAddress(input: updateMyOrderAddressInput!): Boolean
+  submitMyOrder(input: submitMyOrderInput!): Boolean
+  shippingScanner(input: ShippingScanner!): Boolean
+  removeMyOrderItem(input: removeMyOrderItemInput!): Boolean
+  updateMyOrderItemQuantity(input: updateMyOrderItemQuantityInput): Boolean
+  updateMyWallArtQuantity(input: updateMyWallArtQuantityInput): Boolean
+}

@@ -1,0 +1,50 @@
+input AddressInput {
+  name: String!
+  street1: String!
+  street2: String
+  city: String!
+  state: String!
+  country: String!
+  zip: String!
+  phone: String
+}
+input parcel {
+  length: Int!
+  width: Int!
+  height: Int!
+  weight: Int!
+  id: String!
+}
+input RatesInput {
+  address: AddressInput!
+  parcel: [parcel!]
+}
+type shippingRateObject {
+  id: ID!
+  object: String
+  created_at: String
+  updated_at: String
+  service: String!
+  carrier: String!
+  rate: String!
+  currency: String
+  retail_rate: String
+  retail_currency: String
+  list_rate: String
+  list_currency: String
+  delivery_days: Int
+  delivery_date: String
+  delivery_date_guaranteed: Boolean
+  est_delivery_days: Int
+  shipment_id: String
+}
+type shippingRate {
+  rates: [shippingRateObject!]
+  id: String!
+}
+extend type Query {
+  getRates(input: RatesInput!): [shippingRate!]
+}
+extend type Mutation {
+  createMasterAddress(input: AddressInput!): Boolean!
+}

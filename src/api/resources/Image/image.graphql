@@ -1,0 +1,96 @@
+type imageUploadResult {
+  name: String!
+  printMargin: Int!
+}
+type orderImage {
+  name: String!
+  base64: String!
+  base64GrayScale: String!
+  frameName: String!
+  printSizes: [PrintSize!]
+  printWidth: Int
+  printHeight: Int
+  isBlackAndWhite: Boolean
+}
+type orderAllImage {
+  name: String!
+  base64: String!
+}
+type finalImage {
+  name: String!
+  base64: String!
+}
+enum ItemType {
+  IMAGE
+  FRAMED_IMAGE
+}
+input sizeInput {
+  x: Float!
+  y: Float!
+  width: Float!
+  height: Float!
+}
+
+input UpdateMyWallArtImageInput {
+  data: UpdateMyOrderImageInput
+  wallArtId: String!
+  filename: String!
+}
+
+input UpdateMyOrderImageInput {
+  type: ItemType!
+  name: String!
+  sizeInfo: sizeInput!
+  width: Int!
+  height: Int!
+  scaledImage: String!
+  quantity: Int!
+  shippingWidth: Int!
+  shippingHeight: Int!
+  shippingWeight: Int!
+  shippingLength: Int!
+  rotate: Int!
+  isColor: String!
+  selectedFrame: String!
+  selectedSize: String!
+  price: Float!
+  frameFactor: Int!
+}
+input WallArtImageFileUpload {
+  file: Upload!
+  wallArtId: String!
+  imageNo: Int!
+}
+input GetWallArtImage {
+  wallArtId: String!
+  filename: String!
+}
+input GetWallArt {
+  id: ID!
+}
+
+type WallArtData {
+  id: ID!
+  name: String!
+  price: Int!
+  images: [OrderImages!]
+}
+input RemoveWallArt {
+  id: ID!
+}
+
+extend type Query {
+  getAllMyImages: [orderAllImage!]
+  getMyImage(input: String!): orderImage!
+  getMyWallArtImage(input: GetWallArtImage!): orderImage!
+  getAllMyFinalImages: [finalImage!]
+  getMyFinalImage(input: String!): finalImage!
+  getWallArt(input: GetWallArt!): WallArtData!
+}
+extend type Mutation {
+  singleImageFileUpload(input: Upload!): imageUploadResult!
+  wallArtImageFileUpload(input: WallArtImageFileUpload!): imageUploadResult!
+  updateMyOrderImage(input: UpdateMyOrderImageInput!): Boolean
+  updateMyWallArtImage(input: UpdateMyWallArtImageInput!): Boolean
+  removeWallArt(input: RemoveWallArt!): Boolean
+}

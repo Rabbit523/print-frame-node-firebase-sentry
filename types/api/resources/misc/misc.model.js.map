@@ -1,0 +1,1 @@
+{"version":3,"file":"misc.model.js","sourceRoot":"","sources":["../../../../src/api/resources/misc/misc.model.ts"],"names":[],"mappings":";;AAAA,uCAAsD;AAMtD,MAAM,YAAY,GAAW,IAAI,iBAAM,CAAC;IACtC,SAAS,EAAE;QACT,IAAI,EAAE,MAAM;QACZ,QAAQ,EAAE,IAAI;QACd,MAAM,EAAE,IAAI;KACb;IACD,WAAW,EAAE;QACX,IAAI,EAAE,MAAM;KACb;CACF,CAAC,CAAC;AAEU,QAAA,SAAS,GAAG,EAAE,CAAC"}

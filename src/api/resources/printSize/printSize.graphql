@@ -1,0 +1,72 @@
+input NewPrintSize {
+  width: Int!
+  height: Int!
+  price: Int!
+  margin: Int
+  framePrice: Int
+  hasFrame: Boolean!
+  frameMargin: Int
+  shippingWidth: Int!
+  shippingLength: Int!
+  shippingHeight: Int!
+  shippingWeight: Int!
+  serverHeightMargin: Int
+  serverWidthMargin: Int
+}
+input UpdatePrintSize {
+  id: ID!
+  width: Int
+  height: Int
+  price: Int
+  margin: Int
+  framePrice: Int
+  hasFrame: Boolean
+  frameMargin: Int
+  shippingWidth: Int
+  shippingLength: Int
+  shippingHeight: Int
+  shippingWeight: Int
+  serverHeightMargin: Int
+  serverWidthMargin: Int
+}
+input DeletePrintSize {
+  id: ID!
+}
+input PrintSizeFilter {
+  limit: Int!
+  offset: Int!
+}
+input PrintSizeInput {
+  id: ID!
+}
+type PrintSize {
+  id: ID!
+  width: Int!
+  height: Int!
+  price: Int!
+  margin: Int!
+  framePrice: Int!
+  hasFrame: Boolean!
+  frameMargin: Int!
+  shippingWidth: Int!
+  shippingLength: Int!
+  shippingHeight: Int!
+  shippingWeight: Int!
+  serverHeightMargin: Int
+  serverWidthMargin: Int
+}
+type PrintSizeQueryInfo {
+  total: Int!
+  printSizes: [PrintSize!]
+}
+
+extend type Query {
+  getAllPrintSizes(input: PrintSizeFilter!): PrintSizeQueryInfo!
+  getOnePrintSize(input: PrintSizeInput!): PrintSize!
+}
+extend type Mutation {
+  createPrintSize(input: NewPrintSize!): PrintSize!
+  createMultiplePrintSizes(input: [NewPrintSize!]): [PrintSize!]
+  updatePrintSize(input: UpdatePrintSize!): PrintSize!
+  deletePrintSize(input: DeletePrintSize!): Boolean!
+}

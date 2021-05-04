@@ -1,0 +1,10 @@
+input contactFormInput {
+  name: String!
+  email: String!
+  category: String!
+  message: String!
+}
+
+extend type Mutation {
+  sendContactForm(input: contactFormInput!): Boolean
+}

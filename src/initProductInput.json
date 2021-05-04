@@ -1,0 +1,724 @@
+{
+  "input": [
+    {
+      "productName": "Fancy Brown Frame",
+      "productSku": "200",
+      "uri": "fancy-brown",
+      "productDescription": "This is a fancy brown frame ",
+      "Thumbnail": "printAndFrameIt/Frames/Brown_white_1.jpg",
+      "FramedImageThumbnail": "printAndFrameIt/FixedFrames/Classic_mahoggany_fuhpkt.png",
+      "FrameImageBorderWidth": 55,
+      "FrameBorderWidth": 30,
+      "FrameImageOutset": 40,
+      "images": [
+        {
+          "imageUrl": "printAndFrameIt/Frames/Brown_white_1.jpg"
+        },
+        {
+          "imageUrl": "/printAndFrameIt/Frames/fancy_brown_pedestal_gddbzn.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "width": 20,
+          "height": 24,
+          "price": 65,
+          "shippingWidth": 24,
+          "shippingHeight": 30,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 100,
+          "serverWidthMargin": 70
+        },
+        {
+          "width": 14,
+          "height": 24,
+          "price": 55,
+          "shippingWidth": 24,
+          "shippingHeight": 30,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 90,
+          "serverWidthMargin": 50
+        },
+        {
+          "width": 12,
+          "height": 24,
+          "price": 55,
+          "shippingWidth": 24,
+          "shippingHeight": 30,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 90,
+          "serverWidthMargin": 40
+        },
+        {
+          "width": 16,
+          "height": 20,
+          "price": 50,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 80,
+          "serverWidthMargin": 50
+        },
+        {
+          "width": 14,
+          "height": 18,
+          "price": 50,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 80,
+          "serverWidthMargin": 40
+        },
+        {
+          "width": 12,
+          "height": 16,
+          "price": 45,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 60,
+          "serverWidthMargin": 40
+        },
+        {
+          "width": 14,
+          "height": 14,
+          "price": 40,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 60,
+          "serverWidthMargin": 40
+        },
+        {
+          "width": 11,
+          "height": 14,
+          "price": 30,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 60,
+          "serverWidthMargin": 40
+        },
+        {
+          "width": 8,
+          "height": 10,
+          "price": 20,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 40,
+          "serverWidthMargin": 20
+        }
+      ]
+    },
+    {
+      "productName": "Fancy Black Frame",
+      "productSku": "300",
+      "uri": "fancy-black",
+      "productDescription": "This is a fancy black frame ",
+      "Thumbnail": "printAndFrameIt/Frames/Black_white.jpg",
+      "FramedImageThumbnail": "printAndFrameIt/FixedFrames/Classic_Black_vuxity.png",
+      "FrameImageBorderWidth": 49,
+      "FrameBorderWidth": 30,
+      "FrameImageOutset": 34,
+      "images": [
+        {
+          "imageUrl": "printAndFrameIt/Frames/Black_white.jpg"
+        },
+        {
+          "imageUrl": "printAndFrameIt/Frames/fancy_black_pedestal_t0y3c0.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "width": 20,
+          "height": 24,
+          "price": 65,
+          "shippingWidth": 24,
+          "shippingHeight": 30,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 100,
+          "serverWidthMargin": 70
+        },
+        {
+          "width": 14,
+          "height": 24,
+          "price": 55,
+          "shippingWidth": 24,
+          "shippingHeight": 30,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 90,
+          "serverWidthMargin": 50
+        },
+        {
+          "width": 12,
+          "height": 24,
+          "price": 55,
+          "shippingWidth": 24,
+          "shippingHeight": 30,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 90,
+          "serverWidthMargin": 40
+        },
+        {
+          "width": 16,
+          "height": 20,
+          "price": 50,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 80,
+          "serverWidthMargin": 50
+        },
+        {
+          "width": 14,
+          "height": 18,
+          "price": 50,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 80,
+          "serverWidthMargin": 40
+        },
+        {
+          "width": 12,
+          "height": 16,
+          "price": 45,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 60,
+          "serverWidthMargin": 40
+        },
+        {
+          "width": 14,
+          "height": 14,
+          "price": 40,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 60,
+          "serverWidthMargin": 40
+        },
+        {
+          "width": 11,
+          "height": 14,
+          "price": 30,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 60,
+          "serverWidthMargin": 40
+        },
+        {
+          "width": 8,
+          "height": 10,
+          "price": 20,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 40,
+          "serverWidthMargin": 20
+        }
+      ]
+    },
+    {
+      "productName": "Rustic Brown Frame",
+      "productSku": "400",
+      "uri": "rustic-brown",
+      "productDescription": "This is a rustic brown frame ",
+      "Thumbnail": "printAndFrameIt/FixedFrames/rustic_brown_lsvozh.png",
+      "FramedImageThumbnail": "printAndFrameIt/Frames/rustic_brown_tB_crop_iul0is.png",
+      "FrameImageBorderWidth": 49,
+      "FrameBorderWidth": 30,
+      "FrameImageOutset": 34,
+      "images": [
+        {
+          "imageUrl": "printAndFrameIt/Frames/rustic_brown_WB_r966jd.jpg"
+        },
+        {
+          "imageUrl": "printAndFrameIt/Frames/rustic_brown_bench_yj5hro.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "width": 20,
+          "height": 24,
+          "price": 60,
+          "shippingWidth": 24,
+          "shippingHeight": 30,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 150,
+          "serverWidthMargin": 100
+        },
+        {
+          "width": 14,
+          "height": 24,
+          "price": 50,
+          "shippingWidth": 24,
+          "shippingHeight": 30,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 120,
+          "serverWidthMargin": 70
+        },
+        {
+          "width": 12,
+          "height": 24,
+          "price": 50,
+          "shippingWidth": 24,
+          "shippingHeight": 30,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 150,
+          "serverWidthMargin": 60
+        },
+        {
+          "width": 16,
+          "height": 20,
+          "price": 45,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 140,
+          "serverWidthMargin": 80
+        },
+        {
+          "width": 14,
+          "height": 18,
+          "price": 45,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 120,
+          "serverWidthMargin": 60
+        },
+        {
+          "width": 12,
+          "height": 16,
+          "price": 40,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 100,
+          "serverWidthMargin": 60
+        },
+        {
+          "width": 14,
+          "height": 14,
+          "price": 35,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 100,
+          "serverWidthMargin": 60
+        },
+        {
+          "width": 11,
+          "height": 14,
+          "price": 25,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 100,
+          "serverWidthMargin": 50
+        },
+        {
+          "width": 8,
+          "height": 10,
+          "price": 15,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 60,
+          "serverWidthMargin": 40
+        }
+      ]
+    },
+    {
+      "productName": "Rustic Gray Frame",
+      "productSku": "500",
+      "uri": "rustic-gray",
+      "productDescription": "This is a rustic gray frame ",
+      "Thumbnail": "printAndFrameIt/Frames/rustuc_grey_WB_jb3uas.jpg",
+      "FramedImageThumbnail": "printAndFrameIt/FixedFrames/rustic_gray_vflytb.png",
+      "FrameImageBorderWidth": 49,
+      "FrameBorderWidth": 30,
+      "FrameImageOutset": 34,
+      "images": [
+        {
+          "imageUrl": "printAndFrameIt/Frames/rustuc_grey_WB_jb3uas.jpg"
+        },
+        {
+          "imageUrl": "printAndFrameIt/Frames/rustic_white_bench_kojmla.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "width": 20,
+          "height": 24,
+          "price": 60,
+          "shippingWidth": 24,
+          "shippingHeight": 30,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 150,
+          "serverWidthMargin": 100
+        },
+        {
+          "width": 14,
+          "height": 24,
+          "price": 50,
+          "shippingWidth": 24,
+          "shippingHeight": 30,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 120,
+          "serverWidthMargin": 70
+        },
+        {
+          "width": 12,
+          "height": 24,
+          "price": 50,
+          "shippingWidth": 24,
+          "shippingHeight": 30,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 150,
+          "serverWidthMargin": 60
+        },
+        {
+          "width": 16,
+          "height": 20,
+          "price": 45,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 140,
+          "serverWidthMargin": 80
+        },
+        {
+          "width": 14,
+          "height": 18,
+          "price": 45,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 120,
+          "serverWidthMargin": 60
+        },
+        {
+          "width": 12,
+          "height": 16,
+          "price": 40,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 100,
+          "serverWidthMargin": 60
+        },
+        {
+          "width": 14,
+          "height": 14,
+          "price": 35,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 100,
+          "serverWidthMargin": 60
+        },
+        {
+          "width": 11,
+          "height": 14,
+          "price": 25,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 100,
+          "serverWidthMargin": 50
+        },
+        {
+          "width": 8,
+          "height": 10,
+          "price": 15,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 60,
+          "serverWidthMargin": 40
+        }
+      ]
+    },
+    {
+      "productName": "Plain Black Frame",
+      "productSku": "600",
+      "uri": "plain-black",
+      "productDescription": "This is a plain black frame ",
+      "Thumbnail": "printAndFrameIt/Frames/plain_black_WB_upnsgx.jpg",
+      "FramedImageThumbnail": "printAndFrameIt/FixedFrames/modern_black_i4hn4p.png",
+      "FrameImageBorderWidth": 44,
+      "FrameBorderWidth": 30,
+      "FrameImageOutset": 30,
+      "images": [
+        {
+          "imageUrl": "printAndFrameIt/Frames/plain_black_WB_upnsgx.jpg"
+        },
+        {
+          "imageUrl": "printAndFrameIt/Frames/simple_black_pedestal_apah0f.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "width": 20,
+          "height": 24,
+          "price": 60,
+          "shippingWidth": 24,
+          "shippingHeight": 30,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 70,
+          "serverWidthMargin": 50
+        },
+        {
+          "width": 14,
+          "height": 24,
+          "price": 50,
+          "shippingWidth": 24,
+          "shippingHeight": 30,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 70,
+          "serverWidthMargin": 30
+        },
+        {
+          "width": 12,
+          "height": 24,
+          "price": 50,
+          "shippingWidth": 24,
+          "shippingHeight": 30,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 70,
+          "serverWidthMargin": 30
+        },
+        {
+          "width": 16,
+          "height": 20,
+          "price": 45,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 60,
+          "serverWidthMargin": 30
+        },
+        {
+          "width": 14,
+          "height": 18,
+          "price": 45,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 50,
+          "serverWidthMargin": 30
+        },
+        {
+          "width": 12,
+          "height": 16,
+          "price": 40,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 40,
+          "serverWidthMargin": 30
+        },
+        {
+          "width": 14,
+          "height": 14,
+          "price": 35,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 40,
+          "serverWidthMargin": 30
+        },
+        {
+          "width": 11,
+          "height": 14,
+          "price": 25,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 40,
+          "serverWidthMargin": 20
+        },
+        {
+          "width": 8,
+          "height": 10,
+          "price": 15,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 20,
+          "serverWidthMargin": 20
+        }
+      ]
+    },
+    {
+      "productName": "Plain white Frame",
+      "productSku": "700",
+      "uri": "plain-white",
+      "productDescription": "This is a plain white frame ",
+      "Thumbnail": "printAndFrameIt/Frames/plain_white_BB_otjr8g.jpg",
+      "FramedImageThumbnail": "printAndFrameIt/FixedFrames/modern_white_cj5xlw.png",
+      "FrameImageBorderWidth": 35,
+      "FrameBorderWidth": 30,
+      "FrameImageOutset": 35,
+      "images": [
+        {
+          "imageUrl": "printAndFrameIt/Frames/plain_white_BB_otjr8g.jpg"
+        },
+        {
+          "imageUrl": "printAndFrameIt/Frames/pain_white_pedestal_hh1g1k.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "width": 20,
+          "height": 24,
+          "price": 60,
+          "shippingWidth": 24,
+          "shippingHeight": 30,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 60,
+          "serverWidthMargin": 60
+        },
+        {
+          "width": 14,
+          "height": 24,
+          "price": 50,
+          "shippingWidth": 24,
+          "shippingHeight": 30,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 50,
+          "serverWidthMargin": 40
+        },
+        {
+          "width": 12,
+          "height": 24,
+          "price": 50,
+          "shippingWidth": 24,
+          "shippingHeight": 30,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 50,
+          "serverWidthMargin": 30
+        },
+        {
+          "width": 16,
+          "height": 20,
+          "price": 45,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 50,
+          "serverWidthMargin": 50
+        },
+        {
+          "width": 14,
+          "height": 18,
+          "price": 45,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 40,
+          "serverWidthMargin": 40
+        },
+        {
+          "width": 12,
+          "height": 16,
+          "price": 40,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 35,
+          "serverWidthMargin": 35
+        },
+        {
+          "width": 14,
+          "height": 14,
+          "price": 35,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 35,
+          "serverWidthMargin": 40
+        },
+        {
+          "width": 11,
+          "height": 14,
+          "price": 25,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 30,
+          "serverWidthMargin": 30
+        },
+        {
+          "width": 8,
+          "height": 10,
+          "price": 15,
+          "shippingWidth": 24,
+          "shippingHeight": 18,
+          "shippingLength": 5,
+          "shippingWeight": 8,
+          "serverHeightMargin": 20,
+          "serverWidthMargin": 20
+        }
+      ]
+    }
+  ]
+}

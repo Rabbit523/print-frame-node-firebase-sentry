@@ -1,0 +1,14 @@
+node_modules
+*.log
+dist
+.DS_Store
+.env
+coverage/
+"yarn-error.log"
+out/
+#ignore uploads
+uploads/*
+# exception to gitkeep
+!uploads/.gitKeep
+
+.elasticbeanstalk/

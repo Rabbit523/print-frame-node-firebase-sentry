@@ -1,0 +1,175 @@
+type Product {
+  id: ID!
+  productName: String!
+  uri: String!
+  productSku: String
+  productDescription: String
+  createdAt: String
+  updatedAt: String
+  productPrice: Float
+  productQuantity: Int
+  Thumbnail: String!
+  FramedImageThumbnail: String!
+  FrameImageBorderWidth: Int
+  FrameBorderWidth: Int
+  FrameImageOutset: Int
+  images: [productImage!]
+  sizes: [productSize!]
+}
+type productImage {
+  id: ID!
+  imageUrl: String!
+}
+type productSize {
+  id: ID!
+  width: Int!
+  height: Int!
+  price: Float!
+  shippingWidth: Int!
+  shippingHeight: Int!
+  shippingLength: Int!
+  shippingWeight: Int!
+  quantity: Int
+  serverHeightMargin: Int
+  serverWidthMargin: Int
+}
+
+type ProductQueryInfo {
+  products: [Product!]
+  total: Int!
+}
+
+input UpdateProduct {
+  id: ID!
+  productName: String
+  uri: String
+  productSku: String
+  productDescription: String
+  createdAt: String
+  updatedAt: String
+  FramedImageThumbnail: String
+  productPrice: Float
+  productQuantity: Int
+  Thumbnail: String
+  FrameImage: Int
+  FrameImageBorderWidth: Int
+  FrameBorderWidth: Int
+  FrameImageOutset: Int
+  images: [UpdateProductImageInput!]
+  sizes: [UpdateProductSizeInput!]
+}
+
+input NewProduct {
+  productName: String!
+  productSku: String
+  uri: String!
+  productDescription: String
+  productPrice: Int
+  productQuantity: Int
+  Thumbnail: String!
+  FramedImageThumbnail: String!
+  FrameImageBorderWidth: Int
+  FrameBorderWidth: Int
+  FrameImageOutset: Int
+  images: [productImageInput!]!
+  sizes: [productSizeInput!]!
+}
+input DeleteProduct {
+  id: ID!
+}
+
+type ProductMeta {
+  id: ID!
+  metaKey: String!
+  metaValue: String
+  productId: Product!
+}
+
+input UpdateProductMeta {
+  id: ID!
+  metaKey: String!
+  metaValue: String
+}
+
+input DeleteProductMeta {
+  id: ID!
+}
+
+input NewProductMeta {
+  metaKey: String!
+  metaValue: String
+  productID: String!
+}
+input ProductFilter {
+  limit: Int!
+  offset: Int!
+}
+
+input ProductIdInput {
+  id: ID!
+}
+input productSizeInput {
+  width: Int!
+  height: Int!
+  price: Int!
+  shippingWidth: Int!
+  shippingHeight: Int!
+  shippingLength: Int!
+  shippingWeight: Int!
+  quantity: Int
+  serverHeightMargin: Int
+  serverWidthMargin: Int
+}
+input productImageInput {
+  imageUrl: String!
+}
+input UpdateProductSizeInput {
+  id: ID!
+  width: Int!
+  height: Int!
+  price: Int!
+  shippingWidth: Int!
+  shippingHeight: Int!
+  shippingLength: Int!
+  shippingWeight: Int!
+  quantity: Int
+  serverHeightMargin: Int
+  serverWidthMargin: Int
+}
+input UpdateProductImageInput {
+  id: ID!
+  imageUrl: String!
+}
+input CreateProductSizeInput {
+  # This is a product id
+  id: ID!
+  sizes: [productSizeInput!]
+}
+input deleteProductImageInput {
+  id: ID!
+  imageId: ID!
+}
+input deleteProductSizeeInput {
+  id: ID!
+  sizeId: ID!
+}
+input CreateProductImageInput {
+  #This is the product id
+  id: ID!
+  images: [productImageInput!]
+}
+extend type Query {
+  getProduct(input: ProductIdInput!): Product!
+  getAllProducts(input: ProductFilter!): ProductQueryInfo!
+  getProductByUri(input: String!): Product
+}
+
+extend type Mutation {
+  createProduct(input: [NewProduct!]): [Product!]
+  createProductImage(input: CreateProductImageInput!): Boolean!
+  createProductSizes(input: CreateProductSizeInput!): Boolean!
+  updateProduct(input: UpdateProduct!): Product!
+  deleteProduct(input: DeleteProduct!): Boolean!
+  deleteProductImage(input: deleteProductImageInput!): Boolean!
+  deleteProductSize(input: deleteProductSizeeInput!): Boolean!
+}
